@@ -1,9 +1,12 @@
 import './App.css';
+import FieldPreviewCard from './components/FormBuilder/FieldPreviewCard';
+import BuilderPage from './pages/BuilderPage';
 
 function App() {
   return (
     <div>
-      <h1 className="flex justify-center items-center">Form Template Builder</h1>
+      <BuilderPage/>
+      <FieldPreviewCard/>
     </div>
   );
 }
