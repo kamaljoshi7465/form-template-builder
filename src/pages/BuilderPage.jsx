@@ -165,7 +165,7 @@ const BuilderPage = () => {
                   <div className="mb-2">
                     <input
                       type="text"
-                      className="font-semibold text-lg border-b focus:outline-none focus:border-blue-500"
+                      className="font-semibold text-lg border-b w-full"
                       value={section.title}
                       placeholder="Enter Your Title Here *"
                       onChange={(e) => {
@@ -225,7 +225,6 @@ const BuilderPage = () => {
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation();
-                        console.log("Deleting section:", section.id);
                         removeSection(section.id);
                       }}
                     >
